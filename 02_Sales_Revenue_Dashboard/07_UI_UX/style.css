@@ -1,5 +1,4 @@
-{
-            body {
+           body {
                 margin: 0;
                 background: #0d1222;
                 color: #eef2ff;
@@ -131,4 +130,3 @@
                     overflow: auto;
                 }
             }
-}
