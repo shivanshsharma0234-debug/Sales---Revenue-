@@ -1,14 +1,90 @@
-
 <!doctype html>
-<html><head><meta charset="utf-8"><title>Sales Dashboard UX Mockup</title>
-<style>
-body{margin:0;background:#0d1222;color:#eef2ff;font-family:Inter,system-ui,sans-serif}.wrap{max-width:1200px;margin:auto;padding:28px}.head{display:flex;justify-content:space-between;align-items:end}.title{font-size:28px;font-weight:800}.muted{color:#8992aa;font-size:12px}.filters{display:flex;gap:10px;margin:22px 0}.pill{background:#171e32;border:1px solid #28304a;padding:9px 13px;border-radius:9px;font-size:12px}.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{background:#151c30;border:1px solid #27304a;border-radius:14px;padding:16px}.label{font-size:11px;color:#8992aa}.value{font-size:23px;font-weight:800;margin-top:7px}.up{font-size:10px;margin-top:7px}.grid{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-top:14px}.chart{height:270px;position:relative}.bars{display:flex;align-items:end;height:190px;gap:12px;padding-top:22px}.bar{flex:1;background:#6b7cff;border-radius:7px 7px 0 0;min-height:35px}.line{position:absolute;left:30px;right:20px;top:105px;height:2px;background:#6b7cff;transform:rotate(-3deg);box-shadow:100px 15px 0 #6b7cff,200px -18px 0 #6b7cff,300px 12px 0 #6b7cff}.donut{width:155px;height:155px;border-radius:50%;background:conic-gradient(#6b7cff 0 38%,#55c7b5 38% 68%,#f4b84a 68% 86%,#d86bff 86%);margin:25px auto;position:relative}.donut:after{content:"38%";position:absolute;inset:30px;border-radius:50%;background:#151c30;display:grid;place-items:center;font-weight:800}.bottom{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}@media(max-width:850px){.kpis{grid-template-columns:1fr 1fr}.grid,.bottom{grid-template-columns:1fr}.filters{overflow:auto}}
-</style></head>
-<body><div class="wrap">
-<div class="head"><div><div class="title">Sales & Revenue Performance</div><div class="muted">Executive dashboard · Power BI UX concept</div></div><div class="muted">2025 · Updated today</div></div>
-<div class="filters"><div class="pill">Date ▾</div><div class="pill">Region ▾</div><div class="pill">Category ▾</div><div class="pill">Product ▾</div></div>
-<div class="kpis"><div class="card"><div class="label">TOTAL REVENUE</div><div class="value">₹2.35 Cr</div><div class="up">▲ 8.6% vs PY</div></div><div class="card"><div class="label">TOTAL PROFIT</div><div class="value">₹38.42 L</div><div class="up">▲ 12.5% vs PY</div></div><div class="card"><div class="label">ORDERS</div><div class="value">4,875</div><div class="up">▲ 7.2% vs PY</div></div><div class="card"><div class="label">CUSTOMERS</div><div class="value">1,284</div><div class="up">▲ 9.3% vs PY</div></div><div class="card"><div class="label">MARGIN</div><div class="value">16.3%</div><div class="up">▲ 1.1 pts</div></div></div>
-<div class="grid"><div class="card chart"><div class="label">MONTHLY REVENUE TREND</div><div class="line"></div><div class="bars"><div class="bar" style="height:70%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:82%"></div><div class="bar" style="height:65%"></div><div class="bar" style="height:95%"></div><div class="bar" style="height:76%"></div><div class="bar" style="height:88%"></div><div class="bar" style="height:64%"></div></div></div>
-<div class="card"><div class="label">REVENUE BY CATEGORY</div><div class="donut"></div><div class="muted">Electronics · 38% &nbsp; Accessories · 30% &nbsp; Furniture · 18%</div></div></div>
-<div class="bottom"><div class="card"><div class="label">REGIONAL PERFORMANCE</div><p>North &nbsp; ███████████████ 35%</p><p>West &nbsp; ███████████ 28%</p><p>South &nbsp; █████████ 20%</p><p>East &nbsp; ███████ 17%</p></div><div class="card"><div class="label">TOP PRODUCTS BY REVENUE</div><p>01 · Laptop ................................ ₹28.6L</p><p>02 · Monitor ............................. ₹24.3L</p><p>03 · Headphones ...................... ₹18.7L</p><p>04 · Office Chair ....................... ₹15.2L</p></div></div>
-</div></body></html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Sales Dashboard UX Mockup</title>
+       <link rel ="stylesheet" href ="style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="head">
+                <div>
+                    <div class="title">Sales & Revenue Performance</div>
+                    <div class="muted">Executive dashboard · Power BI UX concept</div>
+                </div>
+                <div class="muted">2025 · Updated today</div>
+            </div>
+            <div class="filters">
+                <div class="pill">Date ▾</div>
+                <div class="pill">Region ▾</div>
+                <div class="pill">Category ▾</div>
+                <div class="pill">Product ▾</div>
+            </div>
+            <div class="kpis">
+                <div class="card">
+                    <div class="label">TOTAL REVENUE</div>
+                    <div class="value">₹2.35 Cr</div>
+                    <div class="up">▲ 8.6% vs PY</div>
+                </div>
+                <div class="card">
+                    <div class="label">TOTAL PROFIT</div>
+                    <div class="value">₹38.42 L</div>
+                    <div class="up">▲ 12.5% vs PY</div>
+                </div>
+                <div class="card">
+                    <div class="label">ORDERS</div>
+                    <div class="value">4,875</div>
+                    <div class="up">▲ 7.2% vs PY</div>
+                </div>
+                <div class="card">
+                    <div class="label">CUSTOMERS</div>
+                    <div class="value">1,284</div>
+                    <div class="up">▲ 9.3% vs PY</div>
+                </div>
+                <div class="card">
+                    <div class="label">MARGIN</div>
+                    <div class="value">16.3%</div>
+                    <div class="up">▲ 1.1 pts</div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="card chart">
+                    <div class="label">MONTHLY REVENUE TREND</div>
+                    <div class="line"></div>
+                    <div class="bars">
+                        <div class="bar" style="height: 70%"></div>
+                        <div class="bar" style="height: 52%"></div>
+                        <div class="bar" style="height: 82%"></div>
+                        <div class="bar" style="height: 65%"></div>
+                        <div class="bar" style="height: 95%"></div>
+                        <div class="bar" style="height: 76%"></div>
+                        <div class="bar" style="height: 88%"></div>
+                        <div class="bar" style="height: 64%"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="label">REVENUE BY CATEGORY</div>
+                    <div class="donut"></div>
+                    <div class="muted">Electronics · 38% &nbsp; Accessories · 30% &nbsp; Furniture · 18%</div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="card">
+                    <div class="label">REGIONAL PERFORMANCE</div>
+                    <p>North &nbsp; ███████████████ 35%</p>
+                    <p>West &nbsp; ███████████ 28%</p>
+                    <p>South &nbsp; █████████ 20%</p>
+                    <p>East &nbsp; ███████ 17%</p>
+                </div>
+                <div class="card">
+                    <div class="label">TOP PRODUCTS BY REVENUE</div>
+                    <p>01 · Laptop ................................ ₹28.6L</p>
+                    <p>02 · Monitor ............................. ₹24.3L</p>
+                    <p>03 · Headphones ...................... ₹18.7L</p>
+                    <p>04 · Office Chair ....................... ₹15.2L</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
