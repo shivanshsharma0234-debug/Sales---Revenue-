@@ -11,7 +11,3 @@
 8. Business Gaps
 9. Recommendations
 10. Next Steps
-
-## Recommendation Rule
-
-Only state a business finding after validating it from SQL/Excel/Power BI. Avoid unsupported claims.
